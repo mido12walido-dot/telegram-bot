@@ -5,8 +5,8 @@ from aiogram.types import Message, LabeledPrice, PreCheckoutQuery
 from aiogram.filters import Command
 
 # تم وضع توكن بوتك الخاص هنا
-TOKEN = "8953767614:AAH_Fuh0XDrn5Ziqem21aCnVywSNx9NscxE"
-
+import os
+TOKEN = os.getenv("BOT_TOKEN")
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
 
